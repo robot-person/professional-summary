@@ -1,6 +1,7 @@
 body{
-	background-color: $theme1-primary;
-	// color: $theme1-secondary;
+	background: $theme2-primary;
+	background: -webkit-linear-gradient(to bottom, #51295a, #2f0043);
+	background: linear-gradient(to bottom, #51295a, #2f0043);
 	color: $light;
 }
 
@@ -10,3 +11,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .comment, em{
 	color: $comment;
 }
+
+// section.section1{
+// 	background-color: $theme1-primary;
+// }
+// section.section2{
+// 	background-color: $theme2-primary;
+// }
