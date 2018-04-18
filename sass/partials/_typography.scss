@@ -1,0 +1,47 @@
+body{
+	font-size: $base-font-size;
+	font-family: $font-roboto;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-bitter;
+}
+h1, .h1{
+	font-size: (($magic-number) * ($magic-number)) * ($magic-number + 1em);
+	line-height: $magic-number * ($base-font-size * 4);
+	margin: .618em 0;
+}
+h2, .h2 {
+	font-size: ($magic-number + 1em) * $magic-number;
+	line-height: $magic-number * ($base-font-size * 3);
+	margin: .618em 0;
+}
+h3, .h3 {
+	font-size: $magic-number + 1em;
+	line-height: $magic-number * ($base-font-size * 2);
+}
+h4, .h4 {
+	font-size: $magic-number * 1em;
+	line-height: $magic-number * ($base-font-size * 1);
+}
+h5, .h5 {
+	font-size: 1em;
+}
+h6, .h6 {
+	font-size: $magic-number - 1em;
+}
+
+p{
+	line-height: $magic-number;
+	margin-bottom: $magic-number * 1em;
+}
+em {
+	font-style: oblique;
+}
+ul>li{
+	line-height: $magic-number;
+
+}
+.monospace{
+	font-family: $font-sourceCodePro;
+}

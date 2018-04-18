@@ -1,0 +1,12 @@
+body{
+	background-color: $theme1-primary;
+	// color: $theme1-secondary;
+	color: $light;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	color: $theme1-secondary;
+}
+.comment, em{
+	color: $comment;
+}

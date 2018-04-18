@@ -1,6 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:700|Roboto|Source+Code+Pro);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
 body {
   font-size: 16px;
-  color: #bada55; }
+  font-family: "Roboto", sans-serif; }
 
-h1 {
-  font-size: 25.888px; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Bitter", serif; }
+
+h1, .h1 {
+  font-size: 6.85373em;
+  line-height: 103.552px;
+  margin: .618em 0; }
+
+h2, .h2 {
+  font-size: 4.23592em;
+  line-height: 77.664px;
+  margin: .618em 0; }
+
+h3, .h3 {
+  font-size: 2.618em;
+  line-height: 51.776px; }
+
+h4, .h4 {
+  font-size: 1.618em;
+  line-height: 25.888px; }
+
+h5, .h5 {
+  font-size: 1em; }
+
+h6, .h6 {
+  font-size: 0.618em; }
+
+p {
+  line-height: 1.618;
+  margin-bottom: 1.618em; }
+
+em {
+  font-style: oblique; }
+
+ul > li {
+  line-height: 1.618; }
+
+.monospace {
+  font-family: "Source Code Pro", monospace; }
+
+.container {
+  max-width: 1168px;
+  margin: 0 auto; }
+
+body {
+  background-color: #3910a1;
+  color: #e0e0e0; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #f27949; }
+
+.comment, em {
+  color: #888888; }

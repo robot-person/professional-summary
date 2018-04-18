@@ -1,3 +1,7 @@
 @import 'vars/units';
 @import 'vars/color';
-@import 'partials/fonts';
+@import 'vars/fonts';
+@import 'mixins/reset';
+@import 'partials/typography';
+@import 'partials/grid';
+@import 'partials/theme';
