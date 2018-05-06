@@ -1,7 +1,7 @@
 body{
 	background: $theme2-primary;
-	background: -webkit-linear-gradient(to bottom, #51295a, #2f0043);
-	background: linear-gradient(to bottom, #51295a, #2f0043);
+	background: -webkit-linear-gradient(to bottom, $background-color_main, $background-color_alt);
+	background: linear-gradient(to bottom, $background-color_main, $background-color_alt);
 	color: $light;
 }
 // body::before{
@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 .comment, em{
 	color: $comment;
+}
+a {
+	color: #2f2fff;
+	padding: 1em;
 }
 
 // section.section1{

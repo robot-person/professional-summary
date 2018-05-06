@@ -1,3 +1,4 @@
+/* $background-color_main: #ff6539; */
 @import url(https://fonts.googleapis.com/css?family=Bitter:700|Roboto|Source+Code+Pro);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -39,40 +40,51 @@ table {
 a {
   text-decoration: none; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   font-size: 16px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  line-height: 1.618;
+  letter-spacing: .168px; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Bitter", serif; }
 
 h1, .h1 {
-  font-size: 6.85373em;
-  line-height: 103.552px;
-  margin: .618em 0; }
+  font-size: 6.854rem;
+  line-height: 1.618;
+  margin: 1em 0 0.5em; }
 
 h2, .h2 {
-  font-size: 4.23592em;
-  line-height: 77.664px;
-  margin: .618em 0; }
+  font-size: 4.236em;
+  line-height: 1.618;
+  margin: 0.75em 0 0.25em; }
 
 h3, .h3 {
   font-size: 2.618em;
-  line-height: 51.776px; }
+  line-height: 1.618;
+  margin: 0.666em 0 0.155em; }
 
 h4, .h4 {
   font-size: 1.618em;
-  line-height: 25.888px; }
+  line-height: 1.618; }
 
 h5, .h5 {
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1.618; }
 
 h6, .h6 {
-  font-size: 0.618em; }
+  font-size: 0.618em;
+  line-height: 1.618; }
 
 p {
   line-height: 1.618;
   margin-bottom: 1.618em; }
+
+.larger {
+  font-size: 125%; }
 
 em {
   font-style: oblique; }
@@ -83,21 +95,56 @@ ul > li {
 .monospace {
   font-family: "Source Code Pro", monospace; }
 
+nav {
+  background: black;
+  display: block;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.333); }
+
+nav .container > ul {
+  display: block; }
+  nav .container > ul li {
+    float: left;
+    padding: 1em; }
+
+.nav-offset {
+  padding-top: 2em; }
+
 section {
-  height: 100vh; }
+  margin-bottom: 3em; }
 
 .container {
   max-width: 1168px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0.75rem; }
+
+.flex {
+  display: flex; }
+
+.flex > div {
+  flex: 1; }
 
 body {
   background: #273F5E;
-  background: -webkit-linear-gradient(to bottom, #51295a, #2f0043);
-  background: linear-gradient(to bottom, #51295a, #2f0043);
+  background: -webkit-linear-gradient(to bottom, #252f3b, #1d222c);
+  background: linear-gradient(to bottom, #252f3b, #1d222c);
   color: #e0e0e0; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #f27949; }
+  color: #ff6539; }
 
 .comment, em {
   color: #888888; }
+
+a {
+  color: #2f2fff;
+  padding: 1em; }
+
+footer {
+  background: black;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 1em; }

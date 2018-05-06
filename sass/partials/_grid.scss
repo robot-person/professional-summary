@@ -1,7 +1,19 @@
+// section{
+// 	height: 100vh;
+// }
 section{
-	height: 100vh;
+	margin-bottom: 3em;
 }
 .container{
 	max-width: 1168px;
 	margin: 0 auto;
+	padding: 0.75rem;
+}
+.flex{
+	display: flex;
+	// flex-direction: column;
+	// justify-content: flex-start;
+}
+.flex > div{
+	flex: 1;
 }

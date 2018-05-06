@@ -1,0 +1,21 @@
+nav {
+	background: black;
+	display: block;
+	height: auto;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.333);
+}
+nav .container > ul{
+	display: block;
+	// flex-direction: row;
+	li{
+		// display: block;
+		float: left;
+		padding: 1em;
+
+	}
+}
+.nav-offset{
+	padding-top: 2em;
+}

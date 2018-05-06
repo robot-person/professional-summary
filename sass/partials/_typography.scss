@@ -1,39 +1,63 @@
-body{
+html{
 	font-size: $base-font-size;
+}
+body{
+	font-size: 16px;
 	font-family: $font-roboto;
+	line-height: $magic-number;
+	letter-spacing: .168px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: $font-bitter;
 }
 h1, .h1{
-	font-size: (($magic-number) * ($magic-number)) * ($magic-number + 1em);
-	line-height: $magic-number * ($base-font-size * 4);
-	margin: .618em 0;
+	// font-size: (($magic-number) * ($magic-number)) * ($magic-number + 1em);
+	font-size: 6.854rem;
+	// line-height: $magic-number * ($base-font-size * 4);
+	line-height: 1.618;
+	// margin: (.618rem * 2) 0;
+	margin: 1em 0 0.5em;
 }
 h2, .h2 {
-	font-size: ($magic-number + 1em) * $magic-number;
-	line-height: $magic-number * ($base-font-size * 3);
-	margin: .618em 0;
+	// font-size: ($magic-number + 1em) * $magic-number;
+	font-size: 4.236em;
+	// line-height: $magic-number * ($base-font-size * 3);
+	line-height: 1.618;
+	// margin: .618rem 0;
+	margin: 0.75em 0 0.25em;
 }
 h3, .h3 {
-	font-size: $magic-number + 1em;
-	line-height: $magic-number * ($base-font-size * 2);
+	// font-size: $magic-number + 1em;
+	font-size: 2.618em;
+	// line-height: $magic-number * ($base-font-size * 2);
+	line-height: 1.618;
+	// margin: (.168rem * 2) 0;
+	margin: 0.666em 0 0.155em;
 }
 h4, .h4 {
 	font-size: $magic-number * 1em;
-	line-height: $magic-number * ($base-font-size * 1);
+	// line-height: $magic-number * $base-font-size;
+	line-height: 1.618;
+	// margin: .168rem 0;
 }
 h5, .h5 {
 	font-size: 1em;
+	line-height: 1.618;
+	// margin: .168rem 0;
 }
 h6, .h6 {
 	font-size: $magic-number - 1em;
+	line-height: 1.618;
+	// margin: .168rem 0;
 }
 
 p{
-	line-height: $magic-number;
+	line-height: 1.618;
 	margin-bottom: $magic-number * 1em;
+}
+.larger{
+	font-size: $base-font-size * 2;
 }
 em {
 	font-style: oblique;
