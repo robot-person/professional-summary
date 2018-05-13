@@ -1,8 +1,9 @@
 body{
-	background: $theme2-primary;
-	background: -webkit-linear-gradient(to bottom, $background-color_main, $background-color_alt);
-	background: linear-gradient(to bottom, $background-color_main, $background-color_alt);
-	color: $light;
+	// background: $theme2-primary;
+	// background: -webkit-linear-gradient(to bottom, $background-color_main, $background-color_alt);
+	// background: linear-gradient(to bottom, $background-color_main, $background-color_alt);
+	background: #F7F2E2;
+	color: $dark;
 }
 // body::before{
 // 	content:'';
@@ -23,6 +24,9 @@ body{
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 	color: $theme1-secondary;
 }
+h4{
+	margin-top: 1em
+}
 .comment, em{
 	color: $comment;
 }
@@ -31,12 +35,49 @@ a {
 	padding: 1em;
 }
 section{
-	min-height: 100vh;
+	padding: 2em 0 0 0;
+	// min-height: 100vh;
 }
-
+section#home{
+	padding: 8em 0 0 0;
+}
 // section.section1{
 // 	background-color: $theme1-primary;
 // }
 // section.section2{
 // 	background-color: $theme2-primary;
 // }
+
+
+
+.divider {
+	margin: 2em 0;
+	background: #F7F2E2;
+	position: relative;
+	height: 1em;
+	z-index: 1;
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+  		right: 0;
+	}
+	&:before {
+		height: .75em;
+		top: 110%;
+		background: linear-gradient(-135deg, $theme1-secondary 0.5em, transparent 0) 0 0.5em, linear-gradient( 135deg, $theme1-secondary 0.5em, transparent 0) 0 0.5em;
+		background-position: top left;
+		background-repeat: repeat-x;
+		background-size: 1em 1em;
+	}
+	&:after {
+		height: 1em;
+		top: 100%;
+		background: linear-gradient(-135deg, #F7F2E2 0.5em, transparent 0) 0 0.5em, linear-gradient( 135deg, #F7F2E2 0.5em, transparent 0) 0 0.5em;
+		background-position: top left;
+		background-repeat: repeat-x;
+		background-size: 1em 1em;
+	}
+}

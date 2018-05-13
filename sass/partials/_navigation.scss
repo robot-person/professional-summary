@@ -1,19 +1,52 @@
 nav {
-	background: black;
+	background: #F7F2E2;
 	display: block;
 	height: auto;
 	position: fixed;
 	width: 100%;
-	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.333);
+	// box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.333);
+	transition: all 100ms ease-out;
+	padding-top: 3em;
 }
+nav.active{
+	background-color: rgba(255,255,255, 0.9);
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.333);
+	font-size: 0.85em;
+	padding-top: 0;
+}
+@media(min-width: 1000px){
+	nav.active{
+		font-size: 100% !important;
+	}
+}
+// 
+// Experiment
+// Add colors to different sections and reflect those updates/changes in the navigation
+// https://codepen.io/zchee/pen/ogzvZZ?editors=1010
+// 
+// nav.active.section1{
+// 	background-color: rgba(247,242,226, 0.9);
+// }
+// nav.active.section2{
+// 	background-color: rgba(247,242,226, 0.9);
+// }
+// nav.active.section3{
+// 	background-color: rgba(247,242,226, 0.9);
+// }
+// nav.active.section4{
+// 	background-color: rgba(247,242,226, 0.9);
+// }
 nav .container > ul{
 	display: block;
 	// flex-direction: row;
 	li{
 		// display: block;
 		float: left;
-		padding: 1em;
-
+		padding: 1em 1em 1em 0;
+			a{
+				color: $theme1-secondary;
+				font-size: 100%;
+			}
 	}
 }
 .nav-offset{
